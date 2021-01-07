@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUpdateActivity">
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ic_capture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:c_border="true"
+        app:c_border_width="1dp"
+        app:c_border_color="@color/colorGray"
+        android:id="@+id/profileIv"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileIv"
+        android:layout_marginTop="4dp"
+        android:hint="Name"
+        android:background="@drawable/shape_rectangle"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/phoneEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEt"
+        android:layout_marginTop="4dp"
+        android:hint="Phone"
+        android:inputType="number"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneEt"
+        android:layout_marginTop="4dp"
+        android:hint="Email"
+        android:background="@drawable/shape_rectangle"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/dobEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailEt"
+        android:layout_marginTop="4dp"
+        android:hint="DOB dd/mm/yy"
+        android:inputType="date"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/bioEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dobEt"
+        android:layout_marginTop="4dp"
+        android:hint="Short Description"
+        android:minHeight="90dp"
+        android:gravity="start"
+        android:background="@drawable/shape_rectangle"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="10dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/shape_rectangle"
+        android:id="@+id/saveBtn"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_done"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

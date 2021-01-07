@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">sqlLite</string>
+    <string name="user_phone">User Phone</string>
+    <string name="phone">Phone</string>
+    <string name="user_email">User Email</string>
+    <string name="email">Email</string>
+    <string name="dob">DOB</string>
+    <string name="user_dob">User DOB</string>
+    <string name="time_of_added_date">Time of Added Date</string>
+    <string name="date_added">Date Added</string>
+    <string name="date_updated">Date updated</string>
+    <string name="time_of_updated_date">Time of Updated Date</string>
+</resources>
